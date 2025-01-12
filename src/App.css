@@ -1,0 +1,27 @@
+  .signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+    overflow: hidden; /* Prevent extra scroll */
+    background-color: white; /* Ensure consistent background */
+  }
+  
+
+  input:-webkit-autofill {
+    background-color: transparent !important; /* Transparent background */
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* Transparent shadow */
+    -webkit-text-fill-color: inherit !important; /* Inherit text color */
+    color: inherit !important; /* Ensure text matches input color */
+    transition: background-color 5000s ease-in-out 0s; /* Prevent flashing */
+
+  }
+  
+  .dark input:-webkit-autofill {
+    -webkit-text-fill-color: inherit !important; /* Inherit text color */
+    -webkit-text-fill-color: #ffffff !important; /* Set white text color for dark mode */
+  }
+  
+
